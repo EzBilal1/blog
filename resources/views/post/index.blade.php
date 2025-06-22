@@ -894,7 +894,7 @@
                 if (res.id) {
                     alert('Article created successfully!');
                     localStorage.removeItem('blogspace_draft');
-                    window.location.href = 'blog-feed.html';
+                    window.location.href = '';
                 } else {
                     alert('Error creating article: ' + (res.message || '')); 
                 }
