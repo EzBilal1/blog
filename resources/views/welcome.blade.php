@@ -961,7 +961,7 @@
             async loadArticles() {
                 try {
                     const token = localStorage.getItem('token');
-                    const res = await fetch('http://127.0.0.1:8000/api/all/articles', {
+                    const res = await fetch('https://blog-production-70bf.up.railway.app/api/all/articles', {
                         headers: token ? {
                             'Authorization': 'Bearer ' + token,
                             'Accept': 'application/json'
@@ -1014,7 +1014,7 @@
                 this.renderArticles();
 
                 try {
-                    const response = await fetch('http://127.0.0.1:8000/api/like', {
+                    const response = await fetch('https://blog-production-70bf.up.railway.app/api/like', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -1166,7 +1166,7 @@
             }
 
             try {
-                const res = await fetch('http://127.0.0.1:8000/api/user-from-token', {
+                const res = await fetch('https://blog-production-70bf.up.railway.app/api/user-from-token', {
                     headers: {
                         'Authorization': 'Bearer ' + token,
                         'Accept': 'application/json'

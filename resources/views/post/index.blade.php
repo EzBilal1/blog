@@ -880,7 +880,7 @@
                 featured: data.featuredPost,
                 email_notify: data.emailNotify
             };
-            fetch('http://127.0.0.1:8000/api/articles', {
+            fetch('https://blog-production-70bf.up.railway.app/api/articles', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
